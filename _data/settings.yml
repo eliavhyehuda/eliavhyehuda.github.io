@@ -10,6 +10,7 @@ email: eliavhyehuda@gmail.com
 menu:
 - {name: About Me, url: '#about-me'}
 - {name: Contact, url: '#contact'}
+- {name: Resume, url: "EliavYehudaResume.pdf"}
 
 
 #-------------------------------
