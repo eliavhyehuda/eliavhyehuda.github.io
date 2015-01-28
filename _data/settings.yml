@@ -14,6 +14,17 @@ menu:
 
 
 #-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+seo:
+  description: "This is the website of Eliav Yehuda. To see Eliav's social media profiles and professional portfolio."
+  author: 'Eliav Yehuda'
+
+
+
+#-------------------------------
 # About Section
 
 # NOTE: The avatar is defined in the all.sass document.
