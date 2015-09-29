@@ -1,48 +1,59 @@
-header
-  height: 200px
-  //background: url(../img/hero-bg-alt.jpg) center center
-  //background-size: cover
-  background: 
-    color: rgba(0,0,0,0.9)
-  
-  .logo
-    +size(50px)
-    background-image: url(../img/#{$logo-path})
-    float: left
-    margin: 10px 0 0 30px
-    
-    path
-      fill: rgba(38,121,219, 1)
-    
-  nav
-    float: right
-    margin: 30px 30px 0 0
-    
-    a
+$link-color: rgb(38,121,219)
+
+=fontfam($font)
+  font-family: $font, "Helvetica Neue", Helvetica, Arial, sans-serif
+
+=css3-prefix($property, $value...)
+  -webkit-#{$property}: #{$value}
+  -khtml-#{$property}: #{$value}
+  -moz-#{$property}: #{$value}
+  -ms-#{$property}: #{$value}
+  -o-#{$property}: #{$value}
+  #{$property}: #{$value}
+
+
+body
+  padding-top: 80px
+  // provide adequate space for fixed-top-navbar
+
+a
+  color: $link-color
+  border-bottom: 1px solid transparent
+  &:hover
+    text-decoration: none
+    +css3-prefix(transition-property, border, color)
+    +css3-prefix(transition, all 0.3s)
+    border-bottom: 1px solid
+
+.navbar
+  font-size: 1.6em
+  background: black
+
+// center navbar on tablets and desktops
+@media only screen and (min-width: 768px)
+  .navbar-default .navbar-nav
+    width: 100%
+    text-align: center
+    > li
+      float: none
       display: inline-block
-      margin-left: 20px
-      
-      color: rgba(256,256,256, 1)
-      @extend %small-bold
-      
-      &:hover
-        color: rgba(38,121,219, 1)
-    
-  h1
-    text-align: center
-    font:
-      size: 36px
-      weight: 700
-    color: rgba(38,121,219, 1)
-    text-transform: uppercase
-    letter-spacing: 0.05em
-    margin-bottom: 5px
-    clear: both
-    padding-top: 0px
-  
-  .kicker
-    @extend %small-bold
-    text-align: center
-    letter-spacing: 0.05em
+
+.nav-home
+  padding-top: 5px
+  padding-left: 10px
+  display: inline-block
+  color: white
+  +fontfam("Comic Sans MS")
+  border-bottom: none
+  &:hover
+    color: $link-color
+    border-bottom: none
+
+
+.navbar-default .navbar-nav
+  > li > a
     color: white
-    line-height: 1
+    +fontfam("Comic Sans MS")
+    border-bottom: none
+    &:hover
+      color: $link-color

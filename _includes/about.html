@@ -1,4 +1,4 @@
-<section>
+<!-- <section>
 
 	<h3 id="about-me">About Myself</h3>
 	
@@ -35,4 +35,57 @@
 	  
 	  {% endif %}
 	  
-</section>
+</section> -->
+
+<div class="container">
+<div class="jumbotron">
+	<div class="row" id="about-me">
+		<div class="col-md-4">
+			<br class="hidden-xs"><br class="hidden-xs"> <br class="hidden-xs">
+			<img src="assets/img/EliavYehuda.jpg" alt="Eliav Yehuda" width="200" height="200" class="img-circle center-block">
+		</div>
+		<div class="col-md-8">
+			<h1 class="title hidden-xs hidden-sm">Eliav Yehuda</h1>
+			<h1 class="title visible-xs visible-sm text-center">Eliav Yehuda</h1>
+			<p class="lead">
+				Candidate for bachelor of <a href="https://uwaterloo.ca/software-engineering/">Software Engineering</a> at the <a href="https://uwaterloo.ca/">University of Waterloo</a>. Intern at <a href="http://www.uxpsystems.com/">UXP Systems</a>. Past intern at <a href="http://www.edisoft.com/">Edisoft</a>, <a href="http://www.genesys.com/">Genesys</a>, <a href="http://www.fin.gov.on.ca/en/">The Ministry of Finance</a> and <a href="http://www.nexj.com/">NexJ Systems</a>. I am very enthusiastic about working and building new projects for a greater purpose.
+			</p>
+		</div>
+	</div>
+	<div id="contact"></div>
+
+	<br>
+	<br>
+	<div class="row text-center">
+		<div class="col-xs-4 ">
+			<a href="http://www.linkedin.com/in/eliavhyehuda/" target="_blank" id="linkedin">
+				{% include fa.html icon="linkedin" %}
+				<span class="sr-only">LinkedIn</span>
+			</a>
+		</div>
+		<div class="col-xs-4">
+			<a href="https://github.com/eliavhyehuda/" target="_blank" id="github">
+				{% include fa.html icon="github" %}
+				<span class="sr-only">GitHub</span>
+			</a>
+		</div>
+		<div class="col-xs-4">
+			<a href="https://twitter.com/eliavhyehuda/" target="_blank" id="twitter">
+				{% include fa.html icon="twitter" %}
+				<span class="sr-only">Twitter</span>
+			</a>
+		</div>
+	</div>
+	<br>
+	<div class="row text-center">
+		<div class="col-xs-12 " vcenter>
+			<a class="biglink" href="mailto:{{ site.data.settings.email }}" target="_blank" id="contact">
+				{{ site.data.settings.email }}
+			</a>
+		</div>
+	</div>
+
+
+
+</div><!-- jumbotron -->
+</div>
